@@ -27,8 +27,6 @@ Geo Feature Extractor is a web-based application designed to extract geographica
    - **Satellite Map:** Highlights the satellite imagery.
    - **Urban Features Map:** Marks man-made features like buildings.
 
-![Demo Screenshot](https://via.placeholder.com/800x400?text=Demo+Screenshot)
-
 ---
 
 ## Installation & Setup 🛠️
