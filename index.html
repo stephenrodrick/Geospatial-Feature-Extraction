@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo Feature Extractor</title>
+  <!-- Linking CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Leaflet Map Library -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body onload="updateClock()">
+  <!-- Sidebar for Details -->
+  <div class="sidebar">
+    <h2>Geo Feature Extractor</h2>
+    <div id="city">City: N/A</div>
+    <div id="country">Country: N/A</div>
+    <div id="timezone">Timezone: N/A</div>
+    <div id="clock"></div>
+    <div id="weatherData" class="data-container">
+      <h2>Weather Data</h2>
+      <p>Temperature: N/A</p>
+      <p>Weather: N/A</p>
+      <p>Humidity: N/A</p>
+      <p>Wind Speed: N/A</p>
+    </div>
+    <div id="airQualityData" class="data-container">
+      <h2>Air Quality</h2>
+      <p>AQI: N/A</p>
+      <p>PM2.5: N/A</p>
+      <p>PM10: N/A</p>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <div class="search-container">
+      <input type="text" id="searchQuery" placeholder="Enter coordinates (lat, lon)" class="search-input">
+      <button onclick="fetchData()" class="search-button">Search</button>
+    </div>
+    <div id="terrainMap" class="map-container"></div>
+    <div id="satelliteMap" class="map-container"></div>
+    <div id="weatherTempMap" class="map-container"></div>
+  </div>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Linking JavaScript -->
+  <script src="template.js"></script>
+</body>
+</html>
+
